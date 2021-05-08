@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<TITLE>AREA PERSONAL</TITLE>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS responsive(toma control de viewport) -->
+	<link rel="stylesheet" href="../css/user.css"><!-- CSS propia -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+	<!-- Icono menu para pantallas pequeñas -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- MENU -->
+	<div class="topmenu" id="myTopmenu">
+		<a href="inicio.html">INICIO</a>
+		<a href="reserva.html">RESERVA PISTA</a>
+		<a href="#" class="active">AREA PERSONAL</a>
+		<a class='float-right' href="../logout.php">Cerrar Sesion</a>
+		<a href="javascript:void(0);" class="icon" onclick="menuResponsive()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+	<script src="../js/menu.js"></script>
+
+	<!--Calendario y los datos personales -->
+	<div id="APGeneral" class="row">
+
+		<div id="APCalendario" class="col-md-7">
+			<h3 style="text-align: left;  margin-bottom: 20px; margin-top: 20px;">Mis Reservas</h3>
+			<iframe
+				src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%234285F4&amp;ctz=Europe%2FMadrid&amp;src=NXBvaWplb2ZuMjNsb2JpbG5nY28xdmdjbmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=N2ZzdXZwN2h1MWN1azI2cGlwYzR2M20xYzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=Y2RodmZjNGRnNjNxN3FsM2lrZmE0ODdqa2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=NWdzZ3MzcDkxdTNqM2duMjVjOHBvYzBsbDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=Z2VsbTI0MDkzaW1zZTJoazhwcDRib3RyZmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=Z2dndWJsaWJnamF1c29zMzhmcGxsN3A1MHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%238E24AA&amp;color=%23F4511E&amp;color=%23C0CA33&amp;color=%23AD1457&amp;color=%23A79B8E&amp;color=%23795548&amp;title=Reserva%20Pista&amp;mode=MONTH"
+				style="border:solid 1px #777" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+		</div>
+		<div id="APDatosUsuario" class="col-md-4">
+			<h2>Nombre:<input type="text" name="Nombre"></input></h2>
+
+			<h2>Apellidos:<input type="text" name="Nombre"></input></h2>
+			<h2>Direccion:<input type="text" name="Nombre"></input></h2>
+			<h2>Rating:<input type="text" name="Nombre"></input></h2>
+		</div>
+	</div>
+
+
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="row">
+			<div class="col-md-4 contact-box">
+				<div style="color: white;" class="icon icon-basic-smartphone"></div>
+				<h3 style="color: white; font-size: 1.2em; ;">Direccion</h3>
+				<p style="color: white; margin-bottom: 5px; ;">Costa brava</p>
+				<p style="color: white; ;">Madrid, CP 28034</p>
+
+			</div>
+
+			<div class="col-md-4 contact-box">
+				<div style="color: white;" class="icon icon-basic-webpage-multiple"></div>
+				<h3 style="color: white; font-size: 1.2em; ; ">Contacto</h3>
+				<p style="margin-bottom: 5px; "><a style="color: white; ; "
+						href="mailto:padel@padel.com">padel@padel.com</a></p>
+				<a style="color: white; ;" href="tel:916384657">Tel: 916 384 657</a>
+
+
+			</div>
+
+			<div class="col-md-4 contact-box">
+				<div style="color: white;" class="icon icon-basic-mail"></div>
+				<h3 style="color: white; font-size: 1.2em; ;">Horario</h3>
+				<p style="color: white;  margin-bottom: 5px; ;">Todos los dias</p>
+				<p style="color: white; ;">8AM-11PM</p>
+
+			</div>
+		</div>
+		</div>
+		<div class="col-md-12">
+			<span class="copyright">
+
+				Copyright <a href="https://themeforest.net/user/athenastudio" target="_blank">Paddel Meet</a><br>
+
+			</span>
+		</div>
+	</footer>
+	<link rel="stylesheet" type="text/css" href="layout/plugins/fontawesome/css/all.min.css" />
+</body>
+</html>

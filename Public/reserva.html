@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- CSS responsive(toma control de viewport) -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><!-- Bootstrap -->	
+	<link rel="stylesheet" href="../css/user.css"><!-- CSS propia -->
+</head>
+<body>
+	<!-- Icono menu para pantallas pequeñas -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- MENU -->
+	<div class="topmenu" id="myTopmenu">
+		<a href="inicio.html">INICIO</a>
+		<a href="reserva.html" class="active">RESERVA PISTA</a>
+		<a href="Areapersonal.html">AREA PERSONAL</a>
+		<a class='float-right'href="../logout.php">Cerrar Sesion</a>
+		<a href="javascript:void(0);" class="icon" onclick="menuResponsive()"> 
+    		<i class="fa fa-bars"></i>
+  		</a>
+	</div>
+
+	<!--PARTE DIEGO-->
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.13/clipboard.min.js"></script>
+	<script src="https://rawgit.com/notifyjs/notifyjs/master/dist/notify.js"></script>
+
+	<!-- Calendario parte Diego-->
+
+	<div class="GEneral" style="background: rgb(249, 219, 122);">
+		<div class="row" style=" padding-bottom: 30px;">
+		   <div class="col-lg-6 col-md-6 col-sm-12">
+			   <h3 style="text-align: center;  margin-bottom: 20px; margin-top: 20px;">Calendario de reservas</h3>
+			   <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%234285F4&amp;ctz=Europe%2FMadrid&amp;src=NXBvaWplb2ZuMjNsb2JpbG5nY28xdmdjbmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=N2ZzdXZwN2h1MWN1azI2cGlwYzR2M20xYzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=Y2RodmZjNGRnNjNxN3FsM2lrZmE0ODdqa2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=NWdzZ3MzcDkxdTNqM2duMjVjOHBvYzBsbDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=Z2VsbTI0MDkzaW1zZTJoazhwcDRib3RyZmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=Z2dndWJsaWJnamF1c29zMzhmcGxsN3A1MHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%238E24AA&amp;color=%23F4511E&amp;color=%23C0CA33&amp;color=%23AD1457&amp;color=%23A79B8E&amp;color=%23795548&amp;title=Reserva%20Pista&amp;mode=MONTH" style="border:solid 1px #777" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+		   </div>
+		   <div class="col-lg-6 col-md-6 col-sm-12">
+			<h3  style="text-align: center; margin-bottom: 20px; margin-top: 20px;">Reserve su pista</h3>
+			<div id="google_calendar_20161211">
+			<label>Title: </label>
+			<input type="text" name="title"  onfocus="this.select();" />
+			<label>Start Date:  </label><input type="datetime-local" name="date_start" /> <button type="button" class="set-current">Set Current Time</button> 
+			<label>End Date: </label><input type="datetime-local" name="date_end" /> <button type="button" class="set-current">Set Current Time</button>    
+			<label>Location: </label><input type="text" name="location" onfocus="this.select();" /> 
+			<label>Details: </label><textarea name="details" onfocus="this.select();"></textarea>  
+			<label>Invite friends by email: (separados por SPACE)<textarea name="add" onfocus="this.select();" placeholder="foo@bar.baz blog@pulipuli.info"></textarea> 
+			<hr />
+			<div class="result"></div>
+		</div>
+	</div>
+	</div>
+	</div>
+</section>
+<!-- Footer -->
+	<footer id="footer">
+		<div class="row" >
+		<div class="col-md-4 contact-box">
+			<div style="color: white;" class="icon icon-basic-smartphone"></div>
+			<h3 style="color: white; font-size: 1.2em; ;">Direccion</h3>
+			<p style="color: white; margin-bottom: 5px; ;">Costa brava</p>
+			<p style="color: white; ;">Madrid, CP 28034</p>
+		
+		</div>
+		
+		<div class="col-md-4 contact-box">
+			<div style="color: white;" class="icon icon-basic-webpage-multiple"></div>
+			<h3 style="color: white; font-size: 1.2em; ; ">Contacto</h3>
+			<p style="margin-bottom: 5px; "><a style="color: white; ; " href="mailto:padel@padel.com">padel@padel.com</a></p>
+			<a style="color: white; ;" href="tel:916384657">Tel: 916 384 657</a>
+
+
+		</div>
+
+		<div class="col-md-4 contact-box">
+			<div style="color: white;" class="icon icon-basic-mail"></div>
+			<h3 style="color: white; font-size: 1.2em; ;">Horario</h3>
+			<p style="color: white;  margin-bottom: 5px; ;">Todos los dias</p>
+			<p style="color: white; ;">8AM-11PM</p>
+			
+		</div>
+		</div>
+	</div>
+	<div class="col-md-12">
+		<span class="copyright">
+		
+			Copyright <a href="https://themeforest.net/user/athenastudio" target="_blank">Paddel Meet</a><br>
+			
+		
+			
+		</span>
+	</div>
+	</footer>
+	<!-- Fin Calendario parte Diego-->
+	<script src="../js/menu.js"></script>
+	<!-- Font awesome -->
+	<link rel="stylesheet" type="text/css" href="../layout/plugins/fontawesome/css/all.min.css" />
+		
+</body>
+</html>
